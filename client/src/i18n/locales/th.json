@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "home": "หน้าแรก",
+        "news": "ข่าวสาร",
+        "categories": "หมวดหมู่",
+        "about": "เกี่ยวกับเรา",
+        "contact": "ติดต่อ",
+        "login": "เข้าสู่ระบบ",
+        "register": "สมัครสมาชิก",
+        "logout": "ออกจากระบบ",
+        "dashboard": "แดชบอร์ด",
+        "search": "ค้นหา..."
+    },
+    "home": {
+        "breakingNews": "ข่าวด่วน",
+        "latestNews": "ข่าวล่าสุด",
+        "topHighlights": "ไฮไลท์วันนี้",
+        "viewAll": "ดูทั้งหมด",
+        "readMore": "อ่านเพิ่มเติม",
+        "featuredArticle": "บทความแนะนำ"
+    },
+    "article": {
+        "by": "โดย",
+        "publishedOn": "เผยแพร่เมื่อ",
+        "views": "ครั้ง",
+        "comments": "ความคิดเห็น",
+        "relatedArticles": "บทความที่เกี่ยวข้อง",
+        "share": "แชร์",
+        "tags": "แท็ก"
+    },
+    "categories": {
+        "title": "หมวดหมู่",
+        "opening": "ตาเปิด",
+        "tournament": "ทัวร์นาเมนต์",
+        "player": "นักหมากรุก",
+        "strategy": "กลยุทธ์",
+        "puzzle": "ปริศนา",
+        "history": "ประวัติศาสตร์",
+        "online": "หมากรุกออนไลน์",
+        "analysis": "วิเคราะห์"
+    },
+    "sidebar": {
+        "about": "เกี่ยวกับผู้เขียน",
+        "popularPosts": "บทความยอดนิยม",
+        "trendingTopics": "หัวข้อมาแรง",
+        "newsletter": "จดหมายข่าว",
+        "subscribe": "สมัครรับข่าว",
+        "emailPlaceholder": "กรอกอีเมลของคุณ"
+    },
+    "auth": {
+        "login": "เข้าสู่ระบบ",
+        "register": "สร้างบัญชี",
+        "email": "อีเมล",
+        "password": "รหัสผ่าน",
+        "confirmPassword": "ยืนยันรหัสผ่าน",
+        "name": "ชื่อ-นามสกุล",
+        "rememberMe": "จดจำฉัน",
+        "forgotPassword": "ลืมรหัสผ่าน?",
+        "noAccount": "ยังไม่มีบัญชี?",
+        "hasAccount": "มีบัญชีแล้ว?",
+        "signUp": "สมัครสมาชิก",
+        "signIn": "เข้าสู่ระบบ",
+        "or": "หรือ",
+        "backToHome": "กลับหน้าแรก"
+    },
+    "admin": {
+        "dashboard": "แดชบอร์ด",
+        "articles": "บทความ",
+        "categories": "หมวดหมู่",
+        "users": "ผู้ใช้",
+        "settings": "ตั้งค่า",
+        "createArticle": "สร้างบทความ",
+        "editArticle": "แก้ไขบทความ",
+        "totalArticles": "บทความทั้งหมด",
+        "totalViews": "ยอดเข้าชมทั้งหมด",
+        "totalUsers": "ผู้ใช้ทั้งหมด",
+        "recentActivity": "กิจกรรมล่าสุด"
+    },
+    "footer": {
+        "description": "แหล่งข่าวสารหมากรุกชั้นนำ พร้อมการวิเคราะห์และข้อมูลเชิงลึกจากทั่วโลก",
+        "quickLinks": "ลิงก์ด่วน",
+        "followUs": "ติดตามเรา",
+        "copyright": "© 2024 Pawn to Glory สงวนลิขสิทธิ์",
+        "contact": "ติดต่อเรา"
+    },
+    "common": {
+        "loading": "กำลังโหลด...",
+        "error": "เกิดข้อผิดพลาด",
+        "save": "บันทึก",
+        "cancel": "ยกเลิก",
+        "delete": "ลบ",
+        "edit": "แก้ไข",
+        "create": "สร้าง",
+        "submit": "ส่ง",
+        "search": "ค้นหา",
+        "noResults": "ไม่พบผลลัพธ์"
+    }
+}

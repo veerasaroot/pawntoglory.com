@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "home": "Home",
+        "news": "News",
+        "categories": "Categories",
+        "about": "About",
+        "contact": "Contact",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "dashboard": "Dashboard",
+        "search": "Search..."
+    },
+    "home": {
+        "breakingNews": "Breaking News",
+        "latestNews": "Latest News",
+        "topHighlights": "Today's Top Highlights",
+        "viewAll": "View All",
+        "readMore": "Read More",
+        "featuredArticle": "Featured Article"
+    },
+    "article": {
+        "by": "By",
+        "publishedOn": "Published on",
+        "views": "views",
+        "comments": "Comments",
+        "relatedArticles": "Related Articles",
+        "share": "Share",
+        "tags": "Tags"
+    },
+    "categories": {
+        "title": "Categories",
+        "opening": "Openings",
+        "tournament": "Tournaments",
+        "player": "Players",
+        "strategy": "Strategy",
+        "puzzle": "Puzzles",
+        "history": "History",
+        "online": "Online Chess",
+        "analysis": "Analysis"
+    },
+    "sidebar": {
+        "about": "About Author",
+        "popularPosts": "Popular Posts",
+        "trendingTopics": "Trending Topics",
+        "newsletter": "Newsletter",
+        "subscribe": "Subscribe",
+        "emailPlaceholder": "Enter your email"
+    },
+    "auth": {
+        "login": "Login",
+        "register": "Create Account",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "name": "Full Name",
+        "rememberMe": "Remember Me",
+        "forgotPassword": "Forgot Password?",
+        "noAccount": "Don't have an account?",
+        "hasAccount": "Already have an account?",
+        "signUp": "Sign Up",
+        "signIn": "Sign In",
+        "or": "OR",
+        "backToHome": "Back to Home"
+    },
+    "admin": {
+        "dashboard": "Dashboard",
+        "articles": "Articles",
+        "categories": "Categories",
+        "users": "Users",
+        "settings": "Settings",
+        "createArticle": "Create Article",
+        "editArticle": "Edit Article",
+        "totalArticles": "Total Articles",
+        "totalViews": "Total Views",
+        "totalUsers": "Total Users",
+        "recentActivity": "Recent Activity"
+    },
+    "footer": {
+        "description": "Your premier destination for chess news, analysis, and insights from around the world.",
+        "quickLinks": "Quick Links",
+        "followUs": "Follow Us",
+        "copyright": "© 2024 Pawn to Glory. All rights reserved.",
+        "contact": "Contact Us"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "create": "Create",
+        "submit": "Submit",
+        "search": "Search",
+        "noResults": "No results found"
+    }
+}

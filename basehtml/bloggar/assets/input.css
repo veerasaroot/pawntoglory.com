@@ -1,0 +1,89 @@
+/* body fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+
+@layer base {
+    body {
+        font-family: 'Nunito Sans',
+            sans-serif;
+        font-size: 16px;
+        color: #444444;
+        line-height: 1.8em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Futura PT';
+        color: #444444;
+    }
+
+    @font-face {
+        font-family: 'Futura PT';
+        src: url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
+            url('../fonts/FuturaPT-Demi.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    @font-face {
+        font-family: 'Futura PT';
+        src: url('../fonts/FuturaPT-DemiObl.woff2') format('woff2'),
+            url('../fonts/FuturaPT-DemiObl.woff') format('woff');
+        font-weight: 600;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Futura PT';
+        src: url('../fonts/FuturaPT-Heavy.woff2') format('woff2'),
+            url('../fonts/FuturaPT-Heavy.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Futura PT';
+        src: url('../fonts/FuturaPT-Light.woff2') format('woff2'),
+            url('../fonts/FuturaPT-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Futura PT';
+        src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+            url('../fonts/FuturaPT-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.section-wrap {
+    @apply py-[120px] md:py-[90px] sm:py-[80px] relative z-10
+}
+
+.wraper {
+    @apply mx-auto max-w-[1170px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] col:max-w-full xl:px-[12px] lg:px-[12px] md:px-[15px] sm:px-[10px]
+}
+
+
+
+.clip-your-needful-style {
+    -webkit-clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+}
