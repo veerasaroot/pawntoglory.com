@@ -55,6 +55,16 @@ app.use((err, req, res, next) => {
     });
 });
 
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+    const clientDist = path.join(__dirname, '../client/dist');
+    app.use(express.static(clientDist));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(clientDist, 'index.html'));
+    });
+}
+
 // 404 handler
 app.use((req, res) => {
     res.status(404).json({ message: 'Route not found' });
