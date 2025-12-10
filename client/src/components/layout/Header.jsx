@@ -100,7 +100,7 @@ const Header = () => {
                         <div className="w-16 h-16 flex items-center justify-center">
                             <img src="/assets/images/logo.png" alt="Logo" />
                         </div>
-                        <div>
+                        <div className="hidden md:block">
                             <h1 className="text-xl font-bold text-gray-900 font-heading leading-none">
                                 Pawn to Glory
                             </h1>

@@ -27,7 +27,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-gray-900 text-white chess-bg-dark">
+        <footer className="bg-gray-900 text-white">
             <div className="container py-12 md:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Brand */}
@@ -37,7 +37,7 @@ const Footer = () => {
                                 <img src="/assets/images/logo.png" alt="Logo" />
                             </div>
                             <div>
-                                <h3 className="text-lg font-bold leading-none">Pawn to Glory</h3>
+                                <h3 className="text-lg font-bold leading-none" style={{ color: 'white' }}>Pawn to Glory</h3>
                                 <p className="text-xs text-gray-400">Chess News Hub</p>
                             </div>
                         </Link>
@@ -62,7 +62,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-bold mb-4">{t('footer.quickLinks')}</h4>
+                        <h4 className="text-lg font-bold mb-4" style={{ color: 'white' }}>{t('footer.quickLinks')}</h4>
                         <ul className="space-y-2">
                             {quickLinks.map((link) => (
                                 <li key={link.path}>
@@ -79,7 +79,7 @@ const Footer = () => {
 
                     {/* Categories */}
                     <div>
-                        <h4 className="text-lg font-bold mb-4">{t('categories.title')}</h4>
+                        <h4 className="text-lg font-bold mb-4" style={{ color: 'white' }}>{t('categories.title')}</h4>
                         <ul className="space-y-2">
                             {categories.map((category) => (
                                 <li key={category.path}>
@@ -96,7 +96,7 @@ const Footer = () => {
 
                     {/* Newsletter */}
                     <div>
-                        <h4 className="text-lg font-bold mb-4">{t('sidebar.newsletter')}</h4>
+                        <h4 className="text-lg font-bold mb-4" style={{ color: 'white' }}>{t('sidebar.newsletter')}</h4>
                         <p className="text-gray-400 text-sm mb-4">
                             {t('sidebar.emailPlaceholder')}
                         </p>

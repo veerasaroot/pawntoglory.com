@@ -50,15 +50,13 @@ const Register = () => {
     };
 
     return (
-        <div className="min-h-screen flex chess-bg">
+        <div className="min-h-screen flex">
             {/* Left Panel - Branding */}
             <div className="hidden lg:flex lg:w-1/2 bg-gray-900 chess-bg-dark flex-col justify-between p-12">
                 <div className="flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                            <svg className="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 22H5V20H19V22ZM17 10C17 6.13 13.86 3.01 10 3.01C10 3.01 10 3 10 3C9.32 3 8.66 3.1 8.02 3.29L7.21 2.35C8.06 1.82 9 1.45 10 1.27V1C10 0.45 10.45 0 11 0H13C13.55 0 14 0.45 14 1V1.27C17.53 1.94 20.22 4.82 20.86 8.38C21.08 9.56 20.16 10.63 18.96 10.63H17.47C17.17 10.63 16.92 10.44 16.84 10.16C16.73 9.78 16.5 9 16.5 9L13.3 12L11 18H17V10Z" />
-                            </svg>
+                            <img src="/assets/images/logo.png" alt="Logo" />
                         </div>
                         <span className="text-xl font-bold text-white">Pawn to Glory</span>
                     </Link>
@@ -72,12 +70,10 @@ const Register = () => {
                 </div>
 
                 <div className="text-center">
-                    <div className="w-48 h-48 mx-auto mb-6 opacity-30">
-                        <svg viewBox="0 0 24 24" fill="white" className="w-full h-full">
-                            <path d="M19 22H5V20H19V22ZM17 10C17 6.13 13.86 3.01 10 3.01C10 3.01 10 3 10 3C9.32 3 8.66 3.1 8.02 3.29L7.21 2.35C8.06 1.82 9 1.45 10 1.27V1C10 0.45 10.45 0 11 0H13C13.55 0 14 0.45 14 1V1.27C17.53 1.94 20.22 4.82 20.86 8.38C21.08 9.56 20.16 10.63 18.96 10.63H17.47C17.17 10.63 16.92 10.44 16.84 10.16C16.73 9.78 16.5 9 16.5 9L13.3 12L11 18H17V10Z" />
-                        </svg>
+                    <div className="w-56 h-56 mx-auto mb-6 opacity-30">
+                        <img src="/assets/images/logo-white.png" alt="Logo" />
                     </div>
-                    <h2 className="text-2xl font-bold text-white mb-2">Join Our Community</h2>
+                    <h2 className="text-2xl font-bold mb-2" style={{ color: 'white' }}>Join Our Community</h2>
                     <p className="text-gray-400">Stay updated with the latest chess news</p>
                 </div>
 
