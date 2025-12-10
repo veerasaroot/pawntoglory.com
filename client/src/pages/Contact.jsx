@@ -34,7 +34,7 @@ const Contact = () => {
             {/* Header */}
             <div className="bg-gray-900 py-12 md:py-16 chess-bg-dark">
                 <div className="container text-center">
-                    <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                    <h1 className="text-3xl md:text-4xl font-bold text-white mb-2" style={{ color: 'white' }}>
                         {t('footer.contact')}
                     </h1>
                     <p className="text-gray-400">

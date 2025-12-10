@@ -58,7 +58,7 @@ const Login = () => {
                 </div>
 
                 <div className="text-center">
-                    {/* Chess Knight Illustration */}
+                    {/* Pawn to Glory Logo */}
                     <div className="w-56 h-56 mx-auto mb-6 opacity-30">
                         <img src="/assets/images/logo-white.png" alt="Logo" />
                     </div>

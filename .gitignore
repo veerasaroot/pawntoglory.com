@@ -26,8 +26,8 @@ Thumbs.db
 *.swo
 
 # Uploads (ignore uploaded files, keep folder)
-server/uploads/*
-!server/uploads/.gitignore
+# server/uploads/*
+# !server/uploads/.gitkeep
 
 # Client build
 client/dist/

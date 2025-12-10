@@ -12,7 +12,7 @@ const Sidebar = ({ author, categories = [], popularArticles = [] }) => {
                 <div className="bg-white border border-gray-200 rounded-xl p-5 text-center">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
                         <img
-                            src={author.avatar || '/placeholder-avatar.jpg'}
+                            src={author.avatar || '/images/placeholder-avatar.jpg'}
                             alt={author.name}
                             className="w-full h-full object-cover"
                         />
@@ -123,7 +123,7 @@ const Sidebar = ({ author, categories = [], popularArticles = [] }) => {
             {/* Newsletter Widget */}
             <div className="bg-gray-900 rounded-xl p-5 text-center chess-bg-dark">
                 <Mail className="w-10 h-10 text-white mx-auto mb-3" />
-                <h3 className="font-bold text-lg text-white mb-2">{t('sidebar.newsletter')}</h3>
+                <h3 className="font-bold text-lg text-white mb-2" style={{ color: 'white' }}>{t('sidebar.newsletter')}</h3>
                 <p className="text-gray-400 text-sm mb-4">
                     Stay updated with the latest chess news
                 </p>
