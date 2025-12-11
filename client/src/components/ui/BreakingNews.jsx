@@ -103,7 +103,7 @@ const BreakingNews = ({ articles = [] }) => {
                                                 { day: 'numeric', month: 'short' }
                                             )}
                                         </span>
-                                        <h3 className="text-white text-sm font-semibold mt-1 line-clamp-2 group-hover:text-gray-300 transition-colors">
+                                        <h3 className="text-white text-sm font-semibold mt-1 line-clamp-2 group-hover:text-gray-300 transition-colors" style={{ color: 'white' }}>
                                             {article.title}
                                         </h3>
                                     </div>

@@ -24,7 +24,7 @@ const ArticleCard = ({ article, variant = 'default', showExcerpt = true }) => {
                 <div className="overlay" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-10">
                     <span className="badge mb-3">{article.category?.name || 'Chess'}</span>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 line-clamp-2 text-balance">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 line-clamp-2 text-balance" style={{ color: 'white' }}>
                         <Link to={`/news/${article.slug}`} className="hover:underline">
                             {article.title}
                         </Link>

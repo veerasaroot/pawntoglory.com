@@ -39,7 +39,7 @@ const HeroSection = ({ articles = [] }) => {
                                     <span className="badge mb-2 text-xs">
                                         {article.category?.name || 'Chess'}
                                     </span>
-                                    <h3 className="text-lg md:text-xl font-bold text-white line-clamp-2">
+                                    <h3 className="text-lg md:text-xl font-bold text-white line-clamp-2" style={{ color: 'white' }}>
                                         <Link to={`/news/${article.slug}`} className="hover:underline">
                                             {article.title}
                                         </Link>
