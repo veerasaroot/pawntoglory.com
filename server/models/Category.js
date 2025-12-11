@@ -12,6 +12,7 @@ const categorySchema = new mongoose.Schema(
         slug: {
             type: String,
             unique: true,
+            set: (slug) => (slug ? slugify(slug, { lower: true, strict: true }) : slug),
         },
         description: {
             type: String,
@@ -27,8 +28,8 @@ const categorySchema = new mongoose.Schema(
 
 // Generate slug before saving
 categorySchema.pre('save', function (next) {
-    if (this.isModified('name') || this.isNew) {
-        this.slug = slugify(this.name, { lower: true, strict: true });
+    if (!this.slug && (this.isModified('name') || this.isNew)) {
+        this.slug = this.name;
     }
     next();
 });

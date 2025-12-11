@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Clock, Eye, Share2, Facebook, Twitter, Linkedin, ArrowLeft } from 'lucide-react';
 import Sidebar from '../components/layout/Sidebar';
 import ArticleCard from '../components/ui/ArticleCard';
-import { getArticleBySlug, getArticles } from '../services/api';
+import { getArticleBySlug, getArticles, getCategories } from '../services/api';
 
 const ArticleSingle = () => {
     const { t } = useTranslation();

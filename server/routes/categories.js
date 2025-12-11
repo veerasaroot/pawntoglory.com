@@ -46,8 +46,8 @@ router.get('/:slug', async (req, res) => {
 // @access  Private (Admin)
 router.post('/', protect, admin, async (req, res) => {
     try {
-        const { name, description, image } = req.body;
-        const category = await Category.create({ name, description, image });
+        const { name, slug, description, image } = req.body;
+        const category = await Category.create({ name, slug, description, image });
         res.status(201).json(category);
     } catch (error) {
         if (error.code === 11000) {
@@ -62,10 +62,10 @@ router.post('/', protect, admin, async (req, res) => {
 // @access  Private (Admin)
 router.put('/:id', protect, admin, async (req, res) => {
     try {
-        const { name, description, image } = req.body;
+        const { name, slug, description, image } = req.body;
         const category = await Category.findByIdAndUpdate(
             req.params.id,
-            { name, description, image },
+            { name, slug, description, image },
             { new: true }
         );
         if (!category) {

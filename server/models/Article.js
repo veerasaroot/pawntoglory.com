@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import slugify from 'slugify';
+
 
 const articleSchema = new mongoose.Schema(
     {
@@ -53,10 +53,21 @@ const articleSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
+const generateSlug = (text) => {
+    return text.toString().toLowerCase()
+        .replace(/\s+/g, '-')           // Replace spaces with -
+        .replace(/[^\w\u0E00-\u0E7F-]+/g, '') // Remove all non-word chars (except Thai and -)
+        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+        .replace(/^-+/, '')             // Trim - from start
+        .replace(/-+$/, '');            // Trim - from end
+};
+
 // Generate slug before saving
 articleSchema.pre('save', function (next) {
-    if (this.isModified('title') || this.isNew) {
-        this.slug = slugify(this.title, { lower: true, strict: true });
+    if (this.isModified('slug') && this.slug) {
+        this.slug = generateSlug(this.slug);
+    } else if (!this.slug && (this.isModified('title') || this.isNew)) {
+        this.slug = generateSlug(this.title);
     }
     if (this.status === 'published' && !this.publishedAt) {
         this.publishedAt = new Date();
