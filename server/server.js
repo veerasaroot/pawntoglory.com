@@ -30,8 +30,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve uploaded files
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+// Serve static files
 app.use('/assets/images', express.static(path.join(__dirname, '../client/assets/images')));
 
 // API Routes
