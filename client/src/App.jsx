@@ -10,6 +10,8 @@ import AdminLayout from './layouts/AdminLayout';
 import Home from './pages/Home';
 import ArticleList from './pages/ArticleList';
 import ArticleSingle from './pages/ArticleSingle';
+import TournamentList from './pages/TournamentList';
+import TournamentSingle from './pages/TournamentSingle';
 import Contact from './pages/Contact';
 
 // Auth Pages
@@ -24,6 +26,8 @@ import ArticleEditor from './pages/admin/ArticleEditor';
 import AdminCategories from './pages/admin/Categories';
 import AdminUsers from './pages/admin/Users';
 import AdminSettings from './pages/admin/Settings';
+import TournamentListAdmin from './pages/admin/Tournaments';
+import TournamentEditor from './pages/admin/TournamentEditor';
 
 // Components
 import ProtectedRoute from './components/ProtectedRoute';
@@ -55,6 +59,8 @@ function App() {
                     <Route path="/news" element={<ArticleList />} />
                     <Route path="/news/:slug" element={<ArticleSingle />} />
                     <Route path="/category/:slug" element={<ArticleList />} />
+                    <Route path="/tournaments" element={<TournamentList />} />
+                    <Route path="/tournaments/:slug" element={<TournamentSingle />} />
                     <Route path="/contact" element={<Contact />} />
                 </Route>
 
@@ -76,6 +82,9 @@ function App() {
                     <Route path="articles" element={<AdminArticles />} />
                     <Route path="articles/new" element={<ArticleEditor />} />
                     <Route path="articles/edit/:id" element={<ArticleEditor />} />
+                    <Route path="tournaments" element={<TournamentListAdmin />} />
+                    <Route path="tournaments/new" element={<TournamentEditor />} />
+                    <Route path="tournaments/edit/:id" element={<TournamentEditor />} />
                     <Route path="categories" element={<AdminCategories />} />
                     <Route path="users" element={<AdminUsers />} />
                     <Route path="settings" element={<AdminSettings />} />

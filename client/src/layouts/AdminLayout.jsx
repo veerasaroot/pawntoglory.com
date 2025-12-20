@@ -6,6 +6,7 @@ import {
     LayoutDashboard,
     FileText,
     FolderOpen,
+    Trophy,
     Users,
     Settings,
     LogOut,
@@ -34,6 +35,7 @@ const AdminLayout = () => {
     const menuItems = [
         { path: '/admin', icon: LayoutDashboard, label: t('admin.dashboard'), exact: true },
         { path: '/admin/articles', icon: FileText, label: t('admin.articles') },
+        { path: '/admin/tournaments', icon: Trophy, label: t('admin.tournaments') },
         { path: '/admin/categories', icon: FolderOpen, label: t('admin.categories') },
         { path: '/admin/users', icon: Users, label: t('admin.users') },
         { path: '/admin/settings', icon: Settings, label: t('admin.settings') },

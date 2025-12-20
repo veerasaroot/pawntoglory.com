@@ -106,3 +106,34 @@ export const uploadImage = async (file) => {
     });
     return response.data;
 };
+
+// Tournaments
+export const getTournaments = async (params = {}) => {
+    const response = await axios.get(`${API_URL}/tournaments`, { params });
+    return response.data;
+};
+
+export const getTournamentBySlug = async (slug) => {
+    const response = await axios.get(`${API_URL}/tournaments/${slug}`);
+    return response.data;
+};
+
+export const getAdminTournaments = async () => {
+    const response = await axios.get(`${API_URL}/tournaments/admin`);
+    return response.data;
+};
+
+export const createTournament = async (data) => {
+    const response = await axios.post(`${API_URL}/tournaments`, data);
+    return response.data;
+};
+
+export const updateTournament = async (id, data) => {
+    const response = await axios.put(`${API_URL}/tournaments/${id}`, data);
+    return response.data;
+};
+
+export const deleteTournament = async (id) => {
+    const response = await axios.delete(`${API_URL}/tournaments/${id}`);
+    return response.data;
+};

@@ -12,6 +12,7 @@ import categoryRoutes from './routes/categories.js';
 import userRoutes from './routes/users.js';
 import uploadRoutes from './routes/upload.js';
 import dashboardRoutes from './routes/dashboard.js';
+import tournamentRoutes from './routes/tournaments.js';
 
 // Load environment variables
 dotenv.config();
@@ -40,6 +41,7 @@ app.use('/api/categories', categoryRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/tournaments', tournamentRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
